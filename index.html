@@ -1,0 +1,79 @@
+<html>
+ <head>
+ 
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/IACFxcghqQ8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen?rel="O"></iframe>
+         <audio width="400" height="220" controls autoplay>
+<source src="http://www.w3schools.com/tags/horse.mp3" type="audio/mpeg">
+</audio>
+       <title>O.Giroud</title>
+    <script>
+     function banner(){ 
+var text = confirm("Did You Really Want to Click on My Banner?"); 
+return text; 
+}
+    function answer(){ 
+
+      
+        var radio = document.getElementsByName("trivia"); 
+        var selection = false; 
+        var message = "";
+
+        for( var i = 0; i < radio.length; i++) { 
+          if(radio[i].value == "1st" && radio[i].checked == true) { 
+            selection = true; 
+          } //end if statement 
+        } //end for loop
+     
+     if(selection == true) {
+        message = message + "<b><p style='color:green'>Way to go!</p></b>"; 
+      } else { 
+        message = message + "<b><p style='color:red'>Try again my friend.</p></b>"; 
+      }
+      document.getElementById("response").innerHTML = message;
+}
+    </script>
+  <style>
+   <li id="right">
+  </style> 
+ </head>
+ <footer> Jacob Armstrong</footer>
+ <body id="backround">
+  <a href="http://bing.com" onclick="return banner();"> 
+<header id="header"> Bing Search </header>
+</a>
+
+   <nav>
+     <ul id="navmenu">
+       <li class="navitem"> <a href="index.html"> home </a> </li>
+       <li class="navitem"> <a href="gsmes.html"> games </a> </li>
+       <li class="navitem"> <a href="videos.html"> videos </a> </li>
+     </ul>
+    </nav>
+   <h1>O. Giroud</h1>
+   <p class="p1"> Giroud is a soccer player. He plays for <u>Chelsea</u> in the English <i>Premier</i> League. his nationality is French. He plays with very decent soccer players on his national team. His fellow teammates consist of <span class="players">Greizmann, Pogba, Kante, and best of all M'bappe</span>. These five players have single handedly carried their team through the the 2018 <b>World Cup</b> finale.
+   </p>
+   <div class="wrap-list"> </div>
+   <ol>
+   	<li class="li"> Giroud is 32 years old</li>
+   	<li class="li"> Giroud was born September thirtieth 1986</li>
+   	<li class="li"> Giroud was transferred to Chelsea on Jan 31, 2018.</li>
+    </ol>
+  </div>
+   <div class="wrap-trivia">
+   <h2> Giroud trivia </h2>
+   <p> How many goals has Giroud scored in his carrer at Chelsea?</p>   
+   <form>
+    <div id="response"> </div> 
+   <input type="radio" name="trivia" value="1st"> 3 <br>
+   <input type="radio" name="trivia" value="2nd"> 5 <br>
+   <input type="radio" name="trivia" value="3rd"> 7 <br>
+   <input type="button" id="submit" value="click here" onclick="answer()">
+   </form>
+   </div>
+   <img src="jpg.jpg" />
+   <img src="image giroud.jpg" />
+   <hr>
+   <center>Jacob Armstrong: <a href="https://www.google.com">My Favorite Website</a> </center>
+      <li id="left">
+    </body>
+</html>  
